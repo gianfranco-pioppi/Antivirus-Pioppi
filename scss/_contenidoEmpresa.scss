@@ -1,0 +1,49 @@
+@import "colores.scss";
+
+/* EMPRESA
+-------------------------------------------------- */
+.conteiner-lg{
+    .div__empresa{
+            padding: {
+                top: 8em;
+                bottom: 2em;
+            }
+        justify-content: center;
+        text-align: center;
+        background-color: $bgcolor-1;
+      }
+      
+      .div__empresa1{
+            padding: {
+                top: 4em;
+                bottom: 4em;
+            }
+        justify-content: center;
+        text-align: center;
+        background-color: $bgcolor-3;
+      }
+      .h5__empresa{
+        color: rgba(255, 0, 0, 0.747);
+        font-weight: bold;
+      }
+      
+      .div__empresa2{
+        
+        padding: {
+            top: 2em;
+            bottom: 2em;
+        }
+      }
+      
+      .empresa1{
+        text-align: center;
+      }
+      
+      .caj{
+        background-color: $bgcolor-1;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+
+}
