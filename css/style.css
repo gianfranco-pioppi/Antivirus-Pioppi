@@ -20,8 +20,6 @@
   background-color: #F1C400; }
 
 .conteiner-lg .div__empresa1 {
-  padding-top: 4em;
-  padding-bottom: 4em;
   justify-content: center;
   text-align: center;
   background-color: #fbedb3; }
@@ -30,18 +28,15 @@
   color: rgba(255, 0, 0, 0.747);
   font-weight: bold; }
 
-.conteiner-lg .div__empresa2 {
-  padding-top: 2em;
-  padding-bottom: 2em; }
-
-.conteiner-lg .empresa1 {
-  text-align: center; }
+.conteiner-lg .div__empresa2, .conteiner-lg .div__empresa1 {
+  padding-top: 4em;
+  padding-bottom: 4em; }
 
 .conteiner-lg .caj {
   background-color: #F1C400;
   display: flex;
-  text-align: center;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center; }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

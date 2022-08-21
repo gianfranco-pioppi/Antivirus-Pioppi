@@ -1,25 +1,23 @@
 @import "colores.scss";
+@import "variables.scss";
+@import "mixin.scss";
 
 /* EMPRESA
 -------------------------------------------------- */
+
 .conteiner-lg{
     .div__empresa{
             padding: {
-                top: 8em;
-                bottom: 2em;
+                top: map-get($sizes, 8);
+                bottom: map-get($sizes, 2);
             }
-        justify-content: center;
-        text-align: center;
+            @include center;
         background-color: $bgcolor-1;
       }
       
       .div__empresa1{
-            padding: {
-                top: 4em;
-                bottom: 4em;
-            }
-        justify-content: center;
-        text-align: center;
+            @extend .div__empresa2;
+            @include center;
         background-color: $bgcolor-3;
       }
       .h5__empresa{
@@ -28,22 +26,17 @@
       }
       
       .div__empresa2{
-        
+
         padding: {
-            top: 2em;
-            bottom: 2em;
+            top: map-get($sizes, 4);
+            bottom: map-get($sizes, 4);
         }
-      }
-      
-      .empresa1{
-        text-align: center;
       }
       
       .caj{
         background-color: $bgcolor-1;
         display: flex;
-        text-align: center;
-        justify-content: center;
+        @include center;
       }
 
 }
