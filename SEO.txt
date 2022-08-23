@@ -1,0 +1,9 @@
+cambios de SEO, se: 
+
+-modifican los ALT
+
+-agrega keywords y description
+
+-verifican los title de cada página
+
+-modifican palabras en EN por ES
