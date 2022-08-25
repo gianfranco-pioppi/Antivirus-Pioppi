@@ -1,3 +1,4 @@
+@import "./letras";
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -69,8 +70,17 @@
     }
   }
 
+  .letraGrande{
+    font-size: $fuente-grande;
+  }
+
+  
+  .letraNormal{
+    font-size: $fuente-normal;
+  }
     .container-fluid{
         .row{
+
             .div__index1{
                 padding: {
                     top: map-get($sizes, 6);

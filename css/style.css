@@ -87,6 +87,12 @@ ul {
   ul li {
     padding: 5px; }
 
+.letraGrande {
+  font-size: 2.5em; }
+
+.letraNormal {
+  font-size: 1.5em; }
+
 .container-fluid .row .div__index1, .container-fluid .row .div__index2 {
   padding-top: 6em;
   padding-bottom: 6em;
