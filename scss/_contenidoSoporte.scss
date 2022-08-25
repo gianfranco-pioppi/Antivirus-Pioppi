@@ -12,6 +12,19 @@
     min-height: 100vh;
     background-size:cover;
   }
+
+  .mydiv {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    background: linear-gradient(150deg, #fff102,  #f10271, #00c298);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+  }
   
   .h2{
       color: white;

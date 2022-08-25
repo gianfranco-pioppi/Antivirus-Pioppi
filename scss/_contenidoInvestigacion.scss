@@ -1,0 +1,14 @@
+/* INVESTIGACION
+-------------------------------------------------- */
+
+.div__investigacion{
+    color: black;
+    height: 100vh;
+    padding: {
+        top: map-get($sizes, 18);
+        bottom: map-get($sizes, 4);
+    }
+    @include center;
+    background-color: $bgcolor-1;
+    font-weight: bold;
+  }

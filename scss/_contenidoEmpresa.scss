@@ -1,3 +1,4 @@
+@import "reset.scss";
 @import "colores.scss";
 @import "variables.scss";
 @import "mixin.scss";
@@ -6,6 +7,7 @@
 -------------------------------------------------- */
 
 .conteiner-lg{
+    
     .div__empresa{
             padding: {
                 top: map-get($sizes, 8);
@@ -38,5 +40,5 @@
         display: flex;
         @include center;
       }
-
+      
 }

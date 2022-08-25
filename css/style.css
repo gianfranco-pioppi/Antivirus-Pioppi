@@ -1,6 +1,5 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
 * {
   margin: 0;
@@ -9,6 +8,24 @@
 
 .body {
   font-family: 'Roboto', sans-serif; }
+
+/* ANIMACIONES
+-------------------------------------------------- */
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+.fade-in {
+  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+.swing-in-top-fwd {
+  -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -83,13 +100,22 @@ ul {
   padding-top: 6em;
   padding-bottom: 6em;
   text-align: center;
-  background-color: #777777; }
+  color: white;
+  background-color: #212529; }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.body {
+  font-family: 'Roboto', sans-serif; }
 
 /* EMPRESA
 -------------------------------------------------- */
@@ -131,6 +157,18 @@ ul {
   min-height: 100vh;
   background-size: cover; }
 
+.mydiv {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: bold;
+  background: linear-gradient(150deg, #fff102, #f10271, #00c298);
+  background-size: 400% 300%;
+  animation: BgGradient 5s ease infinite; }
+
 .h2 {
   color: white;
   font-size: 50px; }
@@ -140,35 +178,23 @@ ul {
   width: auto;
   font-size: 20px; }
 
-/* SOPORTE
--------------------------------------------------- */
-/* RENOVAR
--------------------------------------------------- */
-.main__renovar {
-  padding-top: 17em;
-  min-height: 100vh;
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  display: flex;
-  justify-content: center; }
-
 /* PRODUCTOS
--------------------------------------------------- */
-.div__productos {
+--------------------------------------------------*/
+body {
+  background-image: linear-gradient(180deg, #eee, #fff 100px, #fff); }
+
+.conteiner-fluid .div__productos {
   padding-top: 8em;
   padding-bottom: 4em;
   justify-content: center;
   text-align: center;
   background-color: white; }
 
-.div__productos1 {
+.conteiner-fluid .div__productos1 {
   padding: 4em 1em 8em 1em;
   justify-content: center;
   text-align: center;
   background-color: #F1C400; }
-
-body {
-  background-image: linear-gradient(180deg, #eee, #fff 100px, #fff); }
 
 .container {
   max-width: 960px; }
@@ -183,8 +209,16 @@ body {
   -moz-user-select: none;
   user-select: none; }
 
-/* EMPRESA
+/* RENOVAR
 -------------------------------------------------- */
+.main__renovar {
+  padding-top: 17em;
+  min-height: 100vh;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  display: flex;
+  justify-content: center; }
+
 /* INVESTIGACION
 -------------------------------------------------- */
 .div__investigacion {
@@ -197,31 +231,8 @@ body {
   background-color: #F1C400;
   font-weight: bold; }
 
-/* ANIMACIONES
+/* keyframes
 -------------------------------------------------- */
-.scale-up-center {
-  -webkit-animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
-
-.fade-in {
-  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
-
-.swing-in-top-fwd {
-  -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
-
-.scale-in-center {
-  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-/* .video{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  z-index: -1;
-} */
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -298,18 +309,6 @@ body {
     transform: scale(1);
     opacity: 1; } }
 
-.mydiv {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  font-size: 45px;
-  font-weight: bold;
-  background: linear-gradient(150deg, #fff102, #f10271, #00c298);
-  background-size: 400% 300%;
-  animation: BgGradient 5s ease infinite; }
-
 @keyframes BgGradient {
   0% {
     background-position: 0% 50%; }
@@ -318,7 +317,7 @@ body {
   100% {
     background-position: 0% 50%; } }
 
-/* RESPONSIVE CSS
+/* media query
 -------------------------------------------------- */
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
