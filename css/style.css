@@ -60,6 +60,9 @@
   /* rtl:remove */
   letter-spacing: -.05rem; }
 
+.fondo {
+  background-color: gray; }
+
 ul {
   display: flex;
   justify-content: start;
