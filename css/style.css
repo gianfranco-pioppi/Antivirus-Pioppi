@@ -122,7 +122,7 @@ ul {
   text-align: center;
   background-color: #fbedb3; }
 
-.conteiner-lg .h5__empresa {
+.conteiner-lg .p__empresa {
   color: rgba(255, 0, 0, 0.747);
   font-weight: bold; }
 
@@ -203,7 +203,7 @@ body {
 /* RENOVAR
 -------------------------------------------------- */
 .main__renovar {
-  padding-top: 17em;
+  padding-top: 13em;
   min-height: 100vh;
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
@@ -215,7 +215,7 @@ body {
 .div__investigacion {
   color: black;
   height: 100vh;
-  padding-top: 18em;
+  padding-top: 13em;
   padding-bottom: 4em;
   justify-content: center;
   text-align: center;

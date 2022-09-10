@@ -5,7 +5,7 @@
     color: black;
     height: 100vh;
     padding: {
-        top: map-get($sizes, 18);
+        top: map-get($sizes, 13);
         bottom: map-get($sizes, 4);
     }
     @include center;
